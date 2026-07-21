@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SettleSheet: settlement disbursement worksheets without rebuilding the spreadsheet</title>
+  <meta name="description" content="Free local-first settlement disbursement worksheet for contingency-fee attorneys. Gross recovery, fees, costs, liens, net to client — private in the browser." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-settlesheet.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#1e3a5f; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#1e3a5f; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #c9a227; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; letter-spacing:-0.02em; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    p, li { color:#243044; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #1e3a5f; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    ul { padding-left:1.25em; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+    code { background:#ebe7df; padding:1px 5px; border-radius:4px; font-size:0.92em; }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>SettleSheet: settlement disbursement worksheets without rebuilding the spreadsheet</h1>
+    <div class="meta">2026-07-22 · contingency-fee practice · open source</div>
+
+    <p>
+      When a personal-injury or other contingency-fee matter settles, the firm does not simply
+      cut one check to the client. Someone has to produce a <strong>settlement disbursement statement</strong>:
+      every dollar of recovery, the contingency fee, case costs advanced, medical and statutory liens
+      (often after hard-fought reductions), referral counsel’s share, and finally the
+      <strong>net to client</strong>. Mistakes here are not cosmetic — they are trust-account and ethics risks.
+    </p>
+
+    <p>
+      Practice-management products that include settlement calculators exist, usually inside a monthly suite.
+      Consumer “how much is my case worth?” widgets are lead generators, not professional statements.
+      What many solo and small plaintiffs’ firms still use is a spreadsheet rebuilt from the last matter —
+      with formulas that drift, lien rows that get deleted by accident, and no clear validation when
+      deductions exceed the pot.
+    </p>
+
+    <div class="cta">
+      <strong>SettleSheet is live</strong>
+      <a href="https://sybilgambleyyu.github.io/SettleSheet/">sybilgambleyyu.github.io/SettleSheet</a>
+      · Source: <a href="https://github.com/SybilGambleyyu/SettleSheet">github.com/SybilGambleyyu/SettleSheet</a>
+    </div>
+
+    <h2>What you get</h2>
+    <ul>
+      <li>Multiple matters stored only in the browser (local-first; no account, no upload)</li>
+      <li>Recovery sources: defendants, carriers, UM/UIM, med-pay, contribution</li>
+      <li>Contingency ladder by stage (pre-suit / filed / trial / appeal), override %, or flat fee</li>
+      <li>Fee base as percent of <em>gross</em> or of <em>net after reimbursable costs</em></li>
+      <li>Outbound referral fee as a percent of the attorney fee</li>
+      <li>Case costs with reimbursable vs firm-overhead flag</li>
+      <li>Liens with claimed vs negotiated final amounts, status, and savings total</li>
+      <li>Live validation (negative net, fee over gross, pending liens, balance check)</li>
+      <li>Printable disbursement statement; CSV statement; CSV check/payee list</li>
+      <li>Lock matter when final; JSON backup import/export; sample PI matter</li>
+    </ul>
+
+    <h2>The arithmetic (intentionally boring)</h2>
+    <p>
+      In the default mode (fee on gross):
+    </p>
+    <p>
+      <code>Net to client = Gross − Attorney fee − Reimbursable costs − Lien payouts</code>
+    </p>
+    <p>
+      Lien payout uses the negotiated final amount when you enter one; waived liens pay zero;
+      pending liens without a reduction still reserve the claimed amount so you do not over-disburse
+      by optimism. Referral fees split the attorney fee between firm and referring counsel without
+      changing the client’s net.
+    </p>
+
+    <h2>Honest limits</h2>
+    <p>
+      SettleSheet is a worksheet, not legal advice. Fee agreements, lien priority, Medicare secondary-payer
+      rules, ERISA reimbursement, child-support holds, and trust disbursement duties vary by jurisdiction
+      and matter. Confirm numbers with your fee agreement and lien correspondence before any check leaves
+      the trust account.
+    </p>
+    <p>
+      It is not a case-management system, not medical-chronology software, and not three-way IOLTA
+      reconciliation. For trust books, use
+      <a href="https://sybilgambleyyu.github.io/TrustRecon/">TrustRecon</a>.
+      For LEDES e-billing on hourly matters, use
+      <a href="https://sybilgambleyyu.github.io/LedesKit/">LedesKit</a>.
+    </p>
+
+    <h2>Why local-first</h2>
+    <p>
+      Settlement figures sit next to medical providers, health plans, and client bank details.
+      SettleSheet keeps every matter in <code>localStorage</code> on your machine. Export a JSON backup
+      if you need portability; clear site data when you leave a shared computer.
+    </p>
+
+    <p>
+      Open the app, load the sample matter, and replace the numbers with your next settlement.
+      If the math and statement layout save you from rebuilding one more fragile spreadsheet,
+      the tool is doing its job.
+    </p>
+
+    <footer>
+      <a href="../tools.html">All tools</a> ·
+      <a href="https://github.com/SybilGambleyyu/SettleSheet">Source</a> ·
+      <a href="../">Blog</a>
+    </footer>
+  </main>
+</body>
+</html>
