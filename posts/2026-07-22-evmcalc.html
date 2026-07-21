@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EVMCalc: earned value metrics without opening the full PPM suite</title>
+  <meta name="description" content="Free local-first earned value calculator for project controls. CPI, SPI, EAC, TCPI from BAC, PV, EV, AC." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-evmcalc.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#1d4ed8; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#0f172a; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #1d4ed8; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #1d4ed8; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>EVMCalc: earned value metrics without opening the full PPM suite</h1>
+    <div class="meta">2026-07-22 · project controls · open source</div>
+    <p>
+      Earned value management is standard language in project controls: <strong>BAC, PV, EV, AC</strong>
+      become <strong>CV, SV, CPI, SPI, EAC, ETC, VAC, TCPI</strong>. Spreadsheets reimplement the formulas every status cycle.
+      Enterprise tools bury them three menus deep. Controllers still need a clear, private place to run the numbers.
+    </p>
+    <div class="cta">
+      <strong>EVMCalc is live</strong>
+      <a href="https://sybilgambleyyu.github.io/EVMCalc/">sybilgambleyyu.github.io/EVMCalc</a>
+      · <a href="https://github.com/SybilGambleyyu/EVMCalc">Source</a>
+    </div>
+    <p>
+      Enter budget and status values; get variances, indices, and forecasts (CPI, remaining-at-budget, and CPI×SPI composite EAC).
+      Keep multiple projects and status snapshots. Export a report or history CSV. Data stays in the browser.
+    </p>
+    <p>
+      Not a scheduling tool and not a substitute for formal contract EVM systems — a fast, local worksheet for the math that drives status reports.
+    </p>
+    <footer><a href="../">All posts</a></footer>
+  </main>
+</body>
+</html>
