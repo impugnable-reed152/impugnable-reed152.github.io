@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChangeOrderLog: revised contract sum without rebuilding the CO spreadsheet</title>
+  <meta name="description" content="Free local-first construction change order register. Original + approved COs = revised contract sum." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-changeorderlog.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#1e3a5f; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#1e3a5f; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #c9a227; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    p, li { color:#243044; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #1e3a5f; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    ul { padding-left:1.25em; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>ChangeOrderLog: revised contract sum without rebuilding the CO spreadsheet</h1>
+    <div class="meta">2026-07-22 · construction contract admin · open source</div>
+    <p>
+      Every project needs a change order log: original contract, additive and credit COs, schedule days,
+      and a running revised total for owner reports and pay apps. Spreadsheets work until someone
+      includes a draft CO in the “approved” total or renumbers a row mid-month.
+    </p>
+    <div class="cta">
+      <strong>ChangeOrderLog is live</strong>
+      <a href="https://sybilgambleyyu.github.io/ChangeOrderLog/">sybilgambleyyu.github.io/ChangeOrderLog</a>
+      · <a href="https://github.com/SybilGambleyyu/ChangeOrderLog">Source</a>
+    </div>
+    <h2>What you get</h2>
+    <ul>
+      <li>Original contract + duration; CO amount (+/−) and days</li>
+      <li>Draft → submitted → approved (rejected/void excluded from revised sum)</li>
+      <li>Revised contract and potential if all pending approve</li>
+      <li>Running balance of approved COs; CSV for owner packages</li>
+      <li>Local-only — pairs with DrawBook for SOV applications</li>
+    </ul>
+    <footer><a href="../tools.html">All tools</a> · <a href="../">Blog</a></footer>
+  </main>
+</body>
+</html>
