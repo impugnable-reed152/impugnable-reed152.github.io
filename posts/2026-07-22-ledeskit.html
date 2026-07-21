@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LedesKit: LEDES 1998B invoices without a full practice-management suite</title>
+  <meta name="description" content="Free local-first LEDES 1998B legal e-billing for solos and small firms. UTBMS codes, validation, .LED export." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-ledeskit.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#1b4f8a; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#0f1c2e; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #0d7a5f; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; letter-spacing:-0.02em; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    p, li { color:#243044; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #0d7a5f; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    ul { padding-left:1.25em; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+    code { background:#ebe7df; padding:1px 5px; border-radius:4px; font-size:0.92em; }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>LedesKit: LEDES 1998B invoices without a full practice-management suite</h1>
+    <div class="meta">2026-07-22 · legal e-billing · open source</div>
+
+    <p>
+      Many corporate and insurance clients will not pay a PDF invoice. They require a
+      <strong>LEDES 1998B</strong> file — a 24-field, pipe-delimited ASCII format with a header row
+      and <code>[]</code> terminators — uploaded to their e-billing portal. If your firm already lives in
+      Clio, Filevine, or similar, export is a menu click. If you are a solo or small firm
+      still billing from spreadsheets or Word, that click does not exist.
+    </p>
+
+    <p>
+      Free Windows utilities exist (often little-known and platform-locked). Enterprise suites
+      solve it as part of a larger subscription. The gap is a focused, browser-based builder
+      that produces a valid <code>.LED</code> file without uploading matter data to a vendor.
+    </p>
+
+    <div class="cta">
+      <strong>LedesKit is live</strong>
+      <a href="https://sybilgambleyyu.github.io/LedesKit/">sybilgambleyyu.github.io/LedesKit</a>
+      · Source: <a href="https://github.com/SybilGambleyyu/LedesKit">github.com/SybilGambleyyu/LedesKit</a>
+    </div>
+
+    <h2>What you get</h2>
+    <ul>
+      <li>Invoice header fields (client ID, matter IDs, firm ID, billing period)</li>
+      <li>Fee and expense line items with UTBMS task, activity, and expense codes</li>
+      <li>Validation before download (required IDs, line math, type rules)</li>
+      <li>Preview of the exact file · CSV import · import existing .LED files</li>
+      <li>Firm defaults for tax ID / timekeeper · sample invoice · local-only storage</li>
+    </ul>
+
+    <h2>Honest limits</h2>
+    <p>
+      LedesKit is not affiliated with LEDES.org and is not a full time-and-billing system.
+      Portals differ: some require firm-specific identifiers or restricted code lists.
+      Always confirm against the client’s e-billing guidelines before treating an export as final.
+    </p>
+
+    <h2>Also shipping</h2>
+    <p>
+      If you work in construction progress billing rather than legal e-billing, see
+      <a href="2026-07-22-drawbook.html">DrawBook</a> — local-first schedule-of-values pay apps.
+    </p>
+
+    <footer>
+      <a href="../">All posts</a>
+      ·
+      <a href="https://github.com/SybilGambleyyu/LedesKit">LedesKit on GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>
