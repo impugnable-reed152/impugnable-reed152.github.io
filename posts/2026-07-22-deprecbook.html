@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeprecBook: MACRS schedules without rebuilding Pub 946 tables</title>
+  <meta name="description" content="Free local-first MACRS fixed-asset depreciation for bookkeepers and tax preparers. Half-year, mid-quarter, real property, §179, bonus — private in the browser." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-deprecbook.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#1d4e89; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#1d4e89; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #e8a838; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; letter-spacing:-0.02em; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    p, li { color:#243044; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #1d4e89; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    ul { padding-left:1.25em; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+    code { background:#ebe7df; padding:1px 5px; border-radius:4px; font-size:0.92em; }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>DeprecBook: MACRS schedules without rebuilding Pub 946 tables</h1>
+    <div class="meta">2026-07-22 · tax &amp; bookkeeping · open source</div>
+
+    <p>
+      Every tax season, bookkeepers and small-firm preparers rebuild the same fixed-asset math:
+      cost, placed-in-service date, recovery class, half-year or mid-quarter convention,
+      optional <strong>§179</strong> and <strong>bonus depreciation</strong>, then a column of MACRS percentages
+      from IRS Publication 946. Spreadsheets work until someone edits a rate cell, forgets that bonus
+      reduces basis, or mid-quarter applies because more than 40% of personal property went in service
+      in Q4.
+    </p>
+
+    <p>
+      Desktop tax planning suites include depreciation modules — for a license fee. Online “MACRS calculators”
+      often handle one asset, one method, and a wall of ads. The gap is a private asset <em>register</em>
+      with full multi-year schedules and a tax-year rollup you can export into workpapers.
+    </p>
+
+    <div class="cta">
+      <strong>DeprecBook is live</strong>
+      <a href="https://sybilgambleyyu.github.io/DeprecBook/">sybilgambleyyu.github.io/DeprecBook</a>
+      · Source: <a href="https://github.com/SybilGambleyyu/DeprecBook">github.com/SybilGambleyyu/DeprecBook</a>
+    </div>
+
+    <h2>What you get</h2>
+    <ul>
+      <li>Asset register with tags, cost, and placed-in-service date</li>
+      <li>MACRS GDS half-year tables for 3, 5, 7, 10, 15, and 20-year property</li>
+      <li>Mid-quarter tables for 3/5/7/10-year property (Q1–Q4)</li>
+      <li>Straight-line half-year; residential 27.5-year and nonresidential 39-year mid-month</li>
+      <li>§179 amount and bonus % applied before regular MACRS percentages</li>
+      <li>Year-by-year schedule: rate, expense, cumulative, book value</li>
+      <li>Tax-year rollup across all assets; CSV and JSON export</li>
+      <li>Local-only — nothing uploaded</li>
+    </ul>
+
+    <h2>Honest limits</h2>
+    <p>
+      DeprecBook is not tax advice. It does not enforce annual §179 dollar caps, taxable-income
+      limits, listed-property rules, or luxury automobile caps — you enter the elections that belong
+      on the return. Confirm current-year bonus percentages and Pub 946 tables before filing.
+      Mid-quarter coverage in v1 is limited to common personal-property lives (3, 5, 7, 10).
+    </p>
+
+    <p>
+      Open the sample fabrication-shop register, set the header tax year, and export a year rollup
+      for your workpapers. If it replaces one more fragile depreciation workbook, it is doing its job.
+    </p>
+
+    <footer>
+      <a href="../tools.html">All tools</a> ·
+      <a href="https://github.com/SybilGambleyyu/DeprecBook">Source</a> ·
+      <a href="../">Blog</a>
+    </footer>
+  </main>
+</body>
+</html>
