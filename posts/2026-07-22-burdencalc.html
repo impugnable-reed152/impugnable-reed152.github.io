@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BurdenCalc: fully loaded labor rates without the spreadsheet maze</title>
+  <meta name="description" content="Free local-first labor burden calculator for construction estimators. Wage plus taxes, WC, benefits → fully loaded $/hr." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-burdencalc.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#9a3412; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#1c1a17; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #9a3412; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #9a3412; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>BurdenCalc: fully loaded labor rates without the spreadsheet maze</h1>
+    <div class="meta">2026-07-22 · construction estimating · open source</div>
+    <p>
+      A $32 journeyman is not a $32 cost. FICA, unemployment taxes, workers’ compensation for the class code,
+      health and pension, PTO accrual, and small tools routinely push fully loaded labor past 50–70% of wage.
+      Bid with wage alone and you donate margin. Bid with a stale burden factor from three years ago and you
+      either lose work or lose money.
+    </p>
+    <p>
+      Spreadsheets work until someone edits the wrong cell. ERP modules work if you already pay for them.
+      Estimators still need a clear, private place to stack burdens by craft and see the loaded rate immediately.
+    </p>
+    <div class="cta">
+      <strong>BurdenCalc is live</strong>
+      <a href="https://sybilgambleyyu.github.io/BurdenCalc/">sybilgambleyyu.github.io/BurdenCalc</a>
+      · <a href="https://github.com/SybilGambleyyu/BurdenCalc">Source</a>
+    </div>
+    <h2>What you get</h2>
+    <ul>
+      <li>Percent-of-wage and flat $/hr burden lines</li>
+      <li>Multiple scenarios (carpenter vs laborer vs operator)</li>
+      <li>Optional markup on loaded cost → sell / bill rate</li>
+      <li>Printable worksheet · JSON backup · sample data · local-only storage</li>
+    </ul>
+    <h2>Honest limits</h2>
+    <p>
+      Not tax or insurance advice. Does not look up WC class codes. Confirm rates with your accountant and carrier.
+    </p>
+    <h2>Also shipping</h2>
+    <p>
+      <a href="2026-07-22-drawbook.html">DrawBook</a> ·
+      <a href="2026-07-22-certpay.html">CertPay</a> ·
+      <a href="2026-07-22-trustrecon.html">TrustRecon</a> ·
+      <a href="2026-07-22-ledeskit.html">LedesKit</a>
+    </p>
+    <footer><a href="../">All posts</a></footer>
+  </main>
+</body>
+</html>
