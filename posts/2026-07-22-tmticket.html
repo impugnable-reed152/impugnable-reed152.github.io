@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TmTicket: T&amp;M force-account tickets without the field spreadsheet</title>
+  <meta name="description" content="Free local-first time-and-material ticket calculator for construction. Labor ST/OT, equipment, materials, markups, printable CSV." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-tmticket.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#1e3a5f; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#1e3a5f; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #c9a227; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    p, li { color:#243044; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #1e3a5f; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    ul { padding-left:1.25em; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>TmTicket: T&amp;M force-account tickets without the field spreadsheet</h1>
+    <div class="meta">2026-07-22 · construction field admin · open source</div>
+    <p>
+      Owner-directed work often starts as time-and-material or force-account: craft hours, equipment,
+      materials, and agreed markups on a ticket the owner or CM signs before it becomes a change order.
+      Full job-cost suites bury that workflow. Field spreadsheets lose OT multipliers and markup splits.
+    </p>
+    <div class="cta">
+      <strong>TmTicket is live</strong>
+      <a href="https://sybilgambleyyu.github.io/TmTicket/">sybilgambleyyu.github.io/TmTicket</a>
+      · <a href="https://github.com/SybilGambleyyu/TmTicket">Source</a>
+    </div>
+    <h2>What you get</h2>
+    <ul>
+      <li>Ticket header: number, project, date, authorization, CO / force-account ref</li>
+      <li>Labor lines with ST and OT hours, rate, and OT multiplier</li>
+      <li>Equipment hours × rate and materials qty × unit cost</li>
+      <li>Separate markup % for labor, equipment, and materials</li>
+      <li>Grand total, lock, print, and CSV — local-only, no upload</li>
+    </ul>
+    <h2>Honest limits</h2>
+    <p>
+      Not a full job-cost or payroll system. Rates and markups are what you enter from the contract or
+      burden worksheet. Pair with <a href="https://sybilgambleyyu.github.io/BurdenCalc/">BurdenCalc</a>
+      for loaded rates and
+      <a href="https://sybilgambleyyu.github.io/ChangeOrderLog/">ChangeOrderLog</a> once the ticket
+      becomes a formal CO.
+    </p>
+    <footer><a href="../tools.html">All tools</a> · <a href="../">Blog</a></footer>
+  </main>
+</body>
+</html>
