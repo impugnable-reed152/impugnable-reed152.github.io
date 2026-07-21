@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CertPay: multi-week certified payroll without a construction payroll suite</title>
+  <meta name="description" content="Free local-first multi-week certified payroll (WH-347 style) for public-work contractors. Employee roster, OT modes, fringe, weekly reports." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-certpay.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#8b3a1a; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#1a1f2e; color:#f5f3ee; padding:18px 20px; border-bottom:3px solid #8b3a1a; }
+    header a { color:#f5f3ee; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; letter-spacing:-0.02em; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    p, li { color:#243044; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #8b3a1a; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    ul { padding-left:1.25em; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>CertPay: multi-week certified payroll without a construction payroll suite</h1>
+    <div class="meta">2026-07-22 · public-work compliance · open source</div>
+
+    <p>
+      On Davis-Bacon and similar public construction work, contractors submit a
+      <strong>certified payroll</strong> every week — typically using Form WH-347 or an agency equivalent —
+      listing each worker’s classification, daily hours, rates, fringe, deductions, and a signed statement of compliance.
+      Miss a week or underpay the wage determination, and the agency (and workers) notice.
+    </p>
+
+    <p>
+      DOL offers a fillable WH-347: fine for a one-off week, painful for a season of weeks with the same crew.
+      Full construction payroll products solve it inside a larger subscription.
+      Small contractors who only occasionally hold public work often rebuild the same spreadsheet every Monday.
+    </p>
+
+    <div class="cta">
+      <strong>CertPay is live</strong>
+      <a href="https://sybilgambleyyu.github.io/CertPay/">sybilgambleyyu.github.io/CertPay</a>
+      · Source: <a href="https://github.com/SybilGambleyyu/CertPay">github.com/SybilGambleyyu/CertPay</a>
+    </div>
+
+    <h2>What you get</h2>
+    <ul>
+      <li>Projects with contract #, location, and wage determination reference</li>
+      <li>Employee roster (classification, base rate, cash fringe, OT multiplier)</li>
+      <li>Weekly payrolls with Sun–Sat hours, lock when filed</li>
+      <li>OT modes: weekly after 40, daily after 8, or manual</li>
+      <li>Cash fringe included in gross; FICA / withholding / other deductions entered per worker</li>
+      <li>Statement-of-compliance fields and a printable text report</li>
+      <li>Sample week · JSON backup · data never leaves the browser</li>
+    </ul>
+
+    <h2>Honest limits</h2>
+    <p>
+      CertPay is not an official DOL form and is not affiliated with the Department of Labor.
+      It does not submit to eCPR or state systems, does not look up wage determinations, and is not a full tax payroll engine.
+      Enter rates from the applicable WD and confirm agency packaging rules before filing.
+    </p>
+
+    <h2>Also shipping</h2>
+    <p>
+      Progress pay apps: <a href="2026-07-22-drawbook.html">DrawBook</a>.
+      Legal e-billing: <a href="2026-07-22-ledeskit.html">LedesKit</a>.
+      Client trust recon: <a href="2026-07-22-trustrecon.html">TrustRecon</a>.
+    </p>
+
+    <footer>
+      <a href="../">All posts</a>
+      ·
+      <a href="https://github.com/SybilGambleyyu/CertPay">CertPay on GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>
