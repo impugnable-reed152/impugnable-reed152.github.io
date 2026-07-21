@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CoiTrack: vendor insurance expirations without the Excel chase</title>
+  <meta name="description" content="Free local-first certificate of insurance tracker for GCs. GL, WC, auto expirations and expiring-soon alerts." />
+  <link rel="canonical" href="https://sybilgambleyyu.github.io/posts/2026-07-22-coitrack.html" />
+  <style>
+    :root { --ink:#142033; --muted:#5c6778; --accent:#0c4a6e; --bg:#f6f3ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:1.05rem; }
+    header { background:#0c4a6e; color:#f0f9ff; padding:18px 20px; border-bottom:3px solid #38bdf8; }
+    header a { color:#f0f9ff; text-decoration:none; font-weight:600; }
+    main { max-width:680px; margin:0 auto; padding:32px 18px 72px; }
+    h1 { font-size:1.75rem; line-height:1.25; margin:0 0 10px; }
+    .meta { color:var(--muted); font-size:0.9rem; margin-bottom:28px; }
+    h2 { font-size:1.2rem; margin:2em 0 0.6em; }
+    p, li { color:#243044; }
+    a { color:var(--accent); }
+    .cta { background:#fff; border:1px solid #dde2ea; border-left:4px solid #0c4a6e; border-radius:8px; padding:14px 16px; margin:1.5em 0; }
+    ul { padding-left:1.25em; }
+    footer { border-top:1px solid #dde2ea; margin-top:3em; padding-top:1.2em; font-size:0.9rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header><a href="../">← SybilGambleyyu</a></header>
+  <main>
+    <h1>CoiTrack: vendor insurance expirations without the Excel chase</h1>
+    <div class="meta">2026-07-22 · construction risk · open source</div>
+    <p>
+      Before a sub steps on site, someone has to know whether their general liability, workers’ comp,
+      and auto certificates are current. Full COI platforms exist for larger contractors. Smaller GCs
+      still use a shared spreadsheet that goes stale the week after bid day.
+    </p>
+    <div class="cta">
+      <strong>CoiTrack is live</strong>
+      <a href="https://sybilgambleyyu.github.io/CoiTrack/">sybilgambleyyu.github.io/CoiTrack</a>
+      · <a href="https://github.com/SybilGambleyyu/CoiTrack">Source</a>
+    </div>
+    <h2>What you get</h2>
+    <ul>
+      <li>Vendor register with GL, WC, auto, umbrella, and professional lines</li>
+      <li>Required flags per coverage; expiration, limits, AI / waiver checkboxes</li>
+      <li>OK / expiring / expired / missing status with portfolio alerts</li>
+      <li>Issues-only filter and alerts CSV for the weekly chase</li>
+      <li>Local-only — no upload of subcontractor data</li>
+    </ul>
+    <h2>Honest limits</h2>
+    <p>
+      Not a carrier verification API and not an ACORD parser. You enter dates from COIs you received.
+      Pair with <a href="https://sybilgambleyyu.github.io/WaiverLog/">WaiverLog</a> for lien waivers.
+    </p>
+    <footer><a href="../tools.html">All tools</a> · <a href="../">Blog</a></footer>
+  </main>
+</body>
+</html>
